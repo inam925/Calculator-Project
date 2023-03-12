@@ -1,0 +1,26 @@
+.display {
+    width: 200px;
+    height: 100px;
+    background-color: gray;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #FF2, #EA7);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* grid-template-columns: repeat(4, 200px); */
+    grid-template-rows: minmax(50px, auto) repeat(5, 50px);
+}
+.body > div > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px, solid rgb(190, 190, 42);
+    outline: none;
+    background-color: rgba(216, 69, 152, 0.75);
+}
+.body > div > button:hover{
+    background-color: rgba(163, 96, 29, 0.267);
+}
